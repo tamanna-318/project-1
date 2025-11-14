@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resumizeme</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-white m-0" style="font-family: Arial, sans-serif;">
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="relative w-[250px] bg-[#f6f8fa] p-5 h-screen box-border">
+      <h2 class="text-[#111] text-2xl font-semibold mb-2">Resumizeme</h2>
+
+      <div class="menu">
+        <h3 class="mt-5 text-base font-medium">My templates</h3>
+        <input
+          type="text"
+          placeholder="Search"
+          class="w-full p-2.5 mt-2 border border-gray-300 rounded-md"
+        />
+        <ul class="list-none p-0 mt-3">
+          <li class="my-2 cursor-pointer">⭐ Software Engineer</li>
+          <li class="my-2 cursor-pointer">⭐ Computer Hardware Engineer</li>
+          <li class="my-2 cursor-pointer">⭐ Network Engineer</li>
+          <li class="my-2 cursor-pointer">⭐ Technical Support</li>
+          <li class="my-2 cursor-pointer">⭐ Network Administrator</li>
+          <li class="my-2 cursor-pointer">⭐ Management</li>
+          <li class="my-2 cursor-pointer">⭐ Data Analyst</li>
+          <li class="my-2 cursor-pointer">⭐ Computer Technician</li>
+        </ul>
+      </div>
+
+      <div class="absolute bottom-5 left-1/2 transform -translate-x-1/2 text-center">
+        <img
+          src="https://musicchartsarchive.com/sites/default/files/artists/cetera-peter.jpg"
+          alt="Profile"
+          class="w-12 h-12 rounded-full object-cover mx-auto"
+        />
+        <p class="mt-2 text-sm">Carla</p>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="flex-1 p-10">
+      <div class="bg-[#008f57] text-white p-5 rounded-lg mb-8">
+        <h3 class="text-lg font-semibold">Premium Account</h3>
+        <p class="mt-2 text-sm">
+          You have a premium account, granting you access to all the remarkable features offered by ResumeDone.
+          With this privilege, you can indulge in the freedom of downloading an unlimited number of resumes and
+          cover letters in both PDF and Word formats.
+        </p>
+      </div>
+
+      <section class="personal-info max-w-[800px] relative">
+        <h2 class="text-[#111] text-2xl font-semibold mb-4">Personal Information</h2>
+
+        <form>
+          <div class="flex justify-between">
+            <div class="w-[48%]">
+              <label class="block mt-2.5 font-bold">First Name</label>
+              <input
+                type="text"
+                value="Petter"
+                class="w-full p-2.5 mt-1.5 border border-gray-300 rounded-md"
+              />
+            </div>
+            <div class="w-[48%]">
+              <label class="block mt-2.5 font-bold">Last Name</label>
+              <input
+                type="text"
+                value="Cetera"
+                class="w-full p-2.5 mt-1.5 border border-gray-300 rounded-md"
+              />
+            </div>
+          </div>
+
+          <div class="flex justify-between mt-4">
+            <div class="w-[48%]">
+              <label class="block mt-2.5 font-bold">City</label>
+              <input
+                type="text"
+                value="London"
+                class="w-full p-2.5 mt-1.5 border border-gray-300 rounded-md"
+              />
+            </div>
+            <div class="w-[48%]">
+              <label class="block mt-2.5 font-bold">Postal Code</label>
+              <input
+                type="text"
+                value="E2 4XF"
+                class="w-full p-2.5 mt-1.5 border border-gray-300 rounded-md"
+              />
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <label class="block mt-2.5 font-bold">Address</label>
+            <input
+              type="text"
+              value="123 Example"
+              class="w-full p-2.5 mt-1.5 border border-gray-300 rounded-md"
+            />
+          </div>
+
+          <div class="flex justify-between mt-4">
+            <div class="w-[48%]">
+              <label class="block mt-2.5 font-bold">Email</label>
+              <input
+                type="email"
+                value="petter@gmail.com"
+                class="w-full p-2.5 mt-1.5 border border-gray-300 rounded-md"
+              />
+            </div>
+            <div class="w-[48%]">
+              <label class="block mt-2.5 font-bold">Phone</label>
+              <input
+                type="text"
+                value="+44223334444"
+                class="w-full p-2.5 mt-1.5 border border-gray-300 rounded-md"
+              />
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <label class="block mt-2.5 font-bold">Password</label>
+            <input
+              type="password"
+              value="Password"
+              class="w-full p-2.5 mt-1.5 border border-gray-300 rounded-md"
+            />
+          </div>
+
+          <p class="mt-4 text-sm">
+            Use this email to log in to your
+            <a href="#" class="text-blue-600 underline">resumedone.io</a>
+            account and receive notifications.
+          </p>
+
+          <button
+            type="submit"
+            class="mt-5 px-6 py-2.5 bg-blue-600 text-white rounded-md hover:bg-blue-800"
+          >
+            Save
+          </button>
+        </form>
+
+        <div class="profile-photo relative mt-6">
+          <img
+            src="https://musicchartsarchive.com/sites/default/files/artists/cetera-peter.jpg"
+            alt="Profile"
+            class="w-[150px] h-[150px] object-cover rounded-full border-2 border-[#333] absolute top-[-450px] right-0 transform -translate-y-1/2 mr-[-220px]"
+          />
+        </div>
+      </section>
+
+      <footer class="mt-10">
+        <a href="#" class="mr-6 text-blue-600 no-underline">Terms &amp; Conditions</a>
+        <a href="#" class="mr-6 text-blue-600 no-underline">Privacy Policy</a>
+        <a href="#" class="mr-6 text-blue-600 no-underline">FAQ</a>
+        <a href="#" class="text-blue-600 no-underline">Contact Us</a>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
